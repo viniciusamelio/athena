@@ -22,7 +22,7 @@ void main() {
     test(
       "database should be created according to table definition",
       () async {
-        const sut = DataTable(
+        const sut = TableCollection(
           name: "user",
           fields: [
             DataField(
@@ -72,7 +72,7 @@ void main() {
     test(
       "database should be created according to table definition when handling datefields",
       () async {
-        const sut = DataTable(
+        const sut = TableCollection(
           name: "user",
           fields: [
             DataField(
@@ -118,7 +118,7 @@ void main() {
     test(
       "table creation should have the same effect using frida",
       () async {
-        const sut = DataTable(
+        const sut = TableCollection(
           name: "user",
           fields: [
             DataField(
@@ -209,7 +209,7 @@ void main() {
   });
 }
 
-class UserTable extends DataTable {
+class UserTable extends TableCollection {
   UserTable()
       : super(
           name: "user",
@@ -229,7 +229,7 @@ class UserTable extends DataTable {
         );
 }
 
-class AddressTable extends DataTable {
+class AddressTable extends TableCollection {
   AddressTable()
       : super(
           name: "address",

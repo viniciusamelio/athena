@@ -1,6 +1,6 @@
 import '../model/fields/key.dart';
 
-extension Parser on ForeignKeyField {
+extension FkParser on ForeignKeyField {
   String parse() {
     return "FOREIGN KEY ($name) references $collectionName($fieldName)";
   }

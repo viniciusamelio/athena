@@ -10,7 +10,7 @@ void main() {
       test(
         "sut should parse as expected",
         () {
-          const sut = DataTable(
+          const sut = TableCollection(
             name: "user",
             fields: [
               DataField(
@@ -48,7 +48,7 @@ void main() {
       test(
         "sut should parse to create as expected",
         () {
-          const sut = DataTable(
+          const sut = TableCollection(
             name: "user",
             fields: [
               DataField(

@@ -12,8 +12,8 @@ abstract interface class DataCollection {
   String create();
 }
 
-class DataTable implements DataCollection {
-  const DataTable({
+class TableCollection implements DataCollection {
+  const TableCollection({
     required this.name,
     required this.fields,
     required this.foreignKeys,
