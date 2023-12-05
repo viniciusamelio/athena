@@ -1,14 +1,16 @@
 name: athena
 description: A sample command-line application.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+publish_to: none
+repository: https://github.com/viniciusamelio/athena
 
 environment:
   sdk: ^3.2.0
 
 # Add regular dependencies here.
 dependencies:
-  frida_query_builder: ^1.0.1
+  frida_query_builder:
+    git: https://github.com/viniciusamelio/bt_frida_query_builder.git
   # path: ^1.8.0
 
 dev_dependencies:
